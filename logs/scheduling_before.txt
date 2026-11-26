@@ -1,0 +1,11 @@
+NAME                       READY   STATUS    RESTARTS   AGE   IP            NODE                             NOMINATED NODE   READINESS GATES
+low-cpu-785dcbfbbc-4wlvf   1/1     Running   0          23s   10.244.0.23   data-engineering-control-plane   <none>           <none>
+low-cpu-785dcbfbbc-7lv6s   1/1     Running   0          23s   10.244.0.21   data-engineering-control-plane   <none>           <none>
+low-cpu-785dcbfbbc-869bp   1/1     Running   0          23s   10.244.0.22   data-engineering-control-plane   <none>           <none>
+low-cpu-785dcbfbbc-ldqkl   1/1     Running   0          23s   10.244.0.25   data-engineering-control-plane   <none>           <none>
+low-cpu-785dcbfbbc-mvtdn   0/1     Pending   0          23s   <none>        <none>                           <none>           <none>
+low-cpu-785dcbfbbc-nd2cx   0/1     Pending   0          23s   <none>        <none>                           <none>           <none>
+low-cpu-785dcbfbbc-sxs7q   1/1     Running   0          23s   10.244.0.26   data-engineering-control-plane   <none>           <none>
+low-cpu-785dcbfbbc-tkp65   0/1     Pending   0          23s   <none>        <none>                           <none>           <none>
+low-cpu-785dcbfbbc-w242f   1/1     Running   0          23s   10.244.0.24   data-engineering-control-plane   <none>           <none>
+low-cpu-785dcbfbbc-w5c6g   1/1     Running   0          23s   10.244.0.20   data-engineering-control-plane   <none>           <none>

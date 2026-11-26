@@ -1,0 +1,71 @@
+Name:             pairs-oom-hw5-main-20261126-lgfl9
+Namespace:        de-hw5
+Priority:         0
+Service Account:  default
+Node:             data-engineering-control-plane/172.24.0.2
+Start Time:       Thu, 26 Nov 2026 14:01:47 +0300
+Labels:           batch.kubernetes.io/controller-uid=7540c27e-fd69-4636-9c84-97f1065504c5
+                  batch.kubernetes.io/job-name=pairs-oom-hw5-main-20261126
+                  controller-uid=7540c27e-fd69-4636-9c84-97f1065504c5
+                  job-name=pairs-oom-hw5-main-20261126
+Annotations:      <none>
+Status:           Failed
+IP:               10.244.0.9
+IPs:
+  IP:           10.244.0.9
+Controlled By:  Job/pairs-oom-hw5-main-20261126
+Containers:
+  map:
+    Container ID:  containerd://aa3a26a25f6eaf566e2c33e23193110588f33dbc1c75ee0f774678d1471a3deb
+    Image:         de-pairs:hw5
+    Image ID:      sha256:6160e2d36aacfafb0bbdace10ec467cf87bb6922e87efbfee8117baa517b8746
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      map
+    State:          Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Thu, 26 Nov 2026 14:01:47 +0300
+      Finished:     Thu, 26 Nov 2026 14:01:47 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  32Mi
+    Requests:
+      cpu:     100m
+      memory:  24Mi
+    Environment:
+      RUN_ID:                hw5-main-20261126
+      JOB_COMPLETION_INDEX:  0
+      RUSTFS_ENDPOINT:       http://rustfs.de-hw5.svc.cluster.local:9000
+      RUSTFS_ACCESS_KEY:     <set to the key 'access-key' in secret 'rustfs-credentials'>  Optional: false
+      RUSTFS_SECRET_KEY:     <set to the key 'secret-key' in secret 'rustfs-credentials'>  Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-trlwz (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-trlwz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  32s   default-scheduler  Successfully assigned de-hw5/pairs-oom-hw5-main-20261126-lgfl9 to data-engineering-control-plane
+  Normal  Pulled     32s   kubelet            spec.containers{map}: Container image "de-pairs:hw5" already present on machine and can be accessed by the pod
+  Normal  Created    32s   kubelet            spec.containers{map}: Container created
+  Normal  Started    32s   kubelet            spec.containers{map}: Container started

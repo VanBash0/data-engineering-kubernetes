@@ -1,0 +1,40 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pairs-map-__RUN_ID__
+  namespace: de-hw5
+spec:
+  completionMode: Indexed
+  completions: 4
+  parallelism: 4
+  backoffLimitPerIndex: 1
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: map
+          image: de-pairs:hw5
+          imagePullPolicy: IfNotPresent
+          args: [map]
+          env:
+            - name: RUN_ID
+              value: __RUN_ID__
+            - name: RUSTFS_ENDPOINT
+              value: http://rustfs.de-hw5.svc.cluster.local:9000
+            - name: RUSTFS_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: rustfs-credentials
+                  key: access-key
+            - name: RUSTFS_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: rustfs-credentials
+                  key: secret-key
+          resources:
+            requests:
+              cpu: 100m
+              memory: 64Mi
+            limits:
+              cpu: '1'
+              memory: 192Mi

@@ -1,0 +1,7 @@
+.git
+.venv
+logs
+results
+tools
+*.docx
+*.pdf

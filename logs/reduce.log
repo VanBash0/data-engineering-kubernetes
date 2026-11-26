@@ -1,0 +1,80 @@
+{
+  "source": "s3://vacancies/hw5/hw5-main-20261126/parts/",
+  "total_rows": 229388,
+  "selected_vacancies": 5608,
+  "unique_pairs": 34184,
+  "top10": [
+    {
+      "items": [
+        "postgresql",
+        "python"
+      ],
+      "count": 1758
+    },
+    {
+      "items": [
+        "python",
+        "sql"
+      ],
+      "count": 1314
+    },
+    {
+      "items": [
+        "git",
+        "python"
+      ],
+      "count": 1301
+    },
+    {
+      "items": [
+        "linux",
+        "python"
+      ],
+      "count": 1056
+    },
+    {
+      "items": [
+        "docker",
+        "python"
+      ],
+      "count": 973
+    },
+    {
+      "items": [
+        "django framework",
+        "python"
+      ],
+      "count": 900
+    },
+    {
+      "items": [
+        "git",
+        "postgresql"
+      ],
+      "count": 635
+    },
+    {
+      "items": [
+        "docker",
+        "postgresql"
+      ],
+      "count": 589
+    },
+    {
+      "items": [
+        "fastapi",
+        "python"
+      ],
+      "count": 565
+    },
+    {
+      "items": [
+        "postgresql",
+        "sql"
+      ],
+      "count": 565
+    }
+  ],
+  "matches_hw3_top10": true
+}
+peak_rss_mib=83.22

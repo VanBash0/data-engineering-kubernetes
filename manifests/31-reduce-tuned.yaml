@@ -1,0 +1,39 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pairs-reduce-tuned-__RUN_ID__
+  namespace: de-hw5
+spec:
+  backoffLimit: 1
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: reduce
+          image: de-pairs:hw5
+          imagePullPolicy: IfNotPresent
+          args: [reduce]
+          env:
+            - name: RUN_ID
+              value: __RUN_ID__
+            - name: PART_COUNT
+              value: '4'
+            - name: RUSTFS_ENDPOINT
+              value: http://rustfs.de-hw5.svc.cluster.local:9000
+            - name: RUSTFS_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: rustfs-credentials
+                  key: access-key
+            - name: RUSTFS_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: rustfs-credentials
+                  key: secret-key
+          resources:
+            requests:
+              cpu: 100m
+              memory: 64Mi
+            limits:
+              cpu: '1'
+              memory: 128Mi

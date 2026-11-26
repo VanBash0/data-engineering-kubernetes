@@ -1,0 +1,72 @@
+[
+  {
+    "items": [
+      "postgresql",
+      "python"
+    ],
+    "count": 1758
+  },
+  {
+    "items": [
+      "python",
+      "sql"
+    ],
+    "count": 1314
+  },
+  {
+    "items": [
+      "git",
+      "python"
+    ],
+    "count": 1301
+  },
+  {
+    "items": [
+      "linux",
+      "python"
+    ],
+    "count": 1056
+  },
+  {
+    "items": [
+      "docker",
+      "python"
+    ],
+    "count": 973
+  },
+  {
+    "items": [
+      "django framework",
+      "python"
+    ],
+    "count": 900
+  },
+  {
+    "items": [
+      "git",
+      "postgresql"
+    ],
+    "count": 635
+  },
+  {
+    "items": [
+      "docker",
+      "postgresql"
+    ],
+    "count": 589
+  },
+  {
+    "items": [
+      "fastapi",
+      "python"
+    ],
+    "count": 565
+  },
+  {
+    "items": [
+      "postgresql",
+      "sql"
+    ],
+    "count": 565
+  }
+]

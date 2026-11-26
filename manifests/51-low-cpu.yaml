@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: low-cpu
+  namespace: de-scheduler
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: low-cpu
+  template:
+    metadata:
+      labels:
+        app: low-cpu
+    spec:
+      priorityClassName: de-low
+      terminationGracePeriodSeconds: 0
+      containers:
+        - name: wait
+          image: busybox:1.36
+          command: [sh, -c, 'sleep 3600']
+          resources:
+            requests:
+              cpu: '2'
+              memory: 32Mi
+            limits:
+              cpu: '2'
+              memory: 64Mi

@@ -1,0 +1,18 @@
+NAME                                          STATUS     COMPLETIONS   DURATION   AGE     CONTAINERS   IMAGES         SELECTOR
+job.batch/pairs-map-hw5-main-20261126         Complete   4/4           7s         104s    map          de-pairs:hw5   batch.kubernetes.io/controller-uid=2256b0fe-125e-4329-b87d-aff48ef3d958
+job.batch/pairs-map-tuned-hw5-main-20261126   Complete   4/4           7s         50s     map          de-pairs:hw5   batch.kubernetes.io/controller-uid=267e1fcd-72a4-4e8b-b384-2121599c7f8c
+job.batch/pairs-oom-hw5-main-20261126         Failed     0/1           2m26s      2m26s   map          de-pairs:hw5   batch.kubernetes.io/controller-uid=7540c27e-fd69-4636-9c84-97f1065504c5
+job.batch/pairs-reduce-hw5-main-20261126      Complete   1/1           3s         32s     reduce       de-pairs:hw5   batch.kubernetes.io/controller-uid=af1a9960-0867-4be1-a5a1-610d398e93b6
+
+NAME                                            READY   STATUS      RESTARTS   AGE     IP            NODE                             NOMINATED NODE   READINESS GATES
+pod/pairs-map-hw5-main-20261126-0-9vc9h         0/1     Completed   0          104s    10.244.0.10   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-hw5-main-20261126-1-k9ghz         0/1     Completed   0          104s    10.244.0.12   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-hw5-main-20261126-2-h79vs         0/1     Completed   0          104s    10.244.0.11   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-hw5-main-20261126-3-c45gs         0/1     Completed   0          104s    10.244.0.13   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-tuned-hw5-main-20261126-0-gvcsb   0/1     Completed   0          50s     10.244.0.14   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-tuned-hw5-main-20261126-1-w4ppr   0/1     Completed   0          50s     10.244.0.16   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-tuned-hw5-main-20261126-2-mcdsg   0/1     Completed   0          50s     10.244.0.15   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-tuned-hw5-main-20261126-3-gmwpl   0/1     Completed   0          50s     10.244.0.17   data-engineering-control-plane   <none>           <none>
+pod/pairs-oom-hw5-main-20261126-lgfl9           0/1     OOMKilled   0          2m26s   10.244.0.9    data-engineering-control-plane   <none>           <none>
+pod/pairs-reduce-hw5-main-20261126-sxbr6        0/1     Completed   0          32s     10.244.0.18   data-engineering-control-plane   <none>           <none>
+pod/rustfs-d6c9d8c6b-bk4r5                      1/1     Running     0          5m17s   10.244.0.7    data-engineering-control-plane   <none>           <none>

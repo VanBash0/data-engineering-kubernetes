@@ -1,0 +1,22 @@
+NAME                     READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                SELECTOR
+deployment.apps/rustfs   1/1     1            1           11m   rustfs       rustfs/rustfs:1.0.3   app=rustfs
+
+NAME             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE   SELECTOR
+service/rustfs   ClusterIP   10.96.189.167   <none>        9000/TCP   11m   app=rustfs
+
+NAME                                STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE   VOLUMEMODE
+persistentvolumeclaim/rustfs-data   Bound    pvc-4c135305-ac9b-4145-8fc2-73b5d53de4e9   4Gi        RWO            standard       <unset>                 11m   Filesystem
+
+NAME                                             READY   STATUS      RESTARTS   AGE     IP            NODE                             NOMINATED NODE   READINESS GATES
+pod/pairs-map-hw5-main-20261126-0-9vc9h          0/1     Completed   0          5m46s   10.244.0.10   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-hw5-main-20261126-1-k9ghz          0/1     Completed   0          5m46s   10.244.0.12   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-hw5-main-20261126-2-h79vs          0/1     Completed   0          5m46s   10.244.0.11   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-hw5-main-20261126-3-c45gs          0/1     Completed   0          5m46s   10.244.0.13   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-tuned-hw5-main-20261126-0-gvcsb    0/1     Completed   0          4m52s   10.244.0.14   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-tuned-hw5-main-20261126-1-w4ppr    0/1     Completed   0          4m52s   10.244.0.16   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-tuned-hw5-main-20261126-2-mcdsg    0/1     Completed   0          4m52s   10.244.0.15   data-engineering-control-plane   <none>           <none>
+pod/pairs-map-tuned-hw5-main-20261126-3-gmwpl    0/1     Completed   0          4m52s   10.244.0.17   data-engineering-control-plane   <none>           <none>
+pod/pairs-oom-hw5-main-20261126-lgfl9            0/1     OOMKilled   0          6m28s   10.244.0.9    data-engineering-control-plane   <none>           <none>
+pod/pairs-reduce-hw5-main-20261126-sxbr6         0/1     Completed   0          4m34s   10.244.0.18   data-engineering-control-plane   <none>           <none>
+pod/pairs-reduce-tuned-hw5-main-20261126-s955t   0/1     Completed   0          3m43s   10.244.0.19   data-engineering-control-plane   <none>           <none>
+pod/rustfs-d6c9d8c6b-bk4r5                       1/1     Running     0          9m19s   10.244.0.7    data-engineering-control-plane   <none>           <none>

@@ -1,0 +1,43 @@
+LAST SEEN   TYPE      REASON              OBJECT                          MESSAGE
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   Created pod: low-cpu-785dcbfbbc-sxs7q
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   Created pod: low-cpu-785dcbfbbc-7lv6s
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   (combined from similar events): Created pod: low-cpu-785dcbfbbc-mvtdn
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   Created pod: low-cpu-785dcbfbbc-tkp65
+22s         Normal    Scheduled           pod/low-cpu-785dcbfbbc-7lv6s    Successfully assigned de-scheduler/low-cpu-785dcbfbbc-7lv6s to data-engineering-control-plane
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   Created pod: low-cpu-785dcbfbbc-nd2cx
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   Created pod: low-cpu-785dcbfbbc-4wlvf
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   Created pod: low-cpu-785dcbfbbc-w242f
+22s         Normal    Scheduled           pod/low-cpu-785dcbfbbc-869bp    Successfully assigned de-scheduler/low-cpu-785dcbfbbc-869bp to data-engineering-control-plane
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   Created pod: low-cpu-785dcbfbbc-ldqkl
+22s         Normal    ScalingReplicaSet   deployment/low-cpu              Scaled up replica set low-cpu-785dcbfbbc from 0 to 10
+22s         Normal    Scheduled           pod/low-cpu-785dcbfbbc-ldqkl    Successfully assigned de-scheduler/low-cpu-785dcbfbbc-ldqkl to data-engineering-control-plane
+22s         Warning   FailedScheduling    pod/low-cpu-785dcbfbbc-tkp65    0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 Insufficient cpu.
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   Created pod: low-cpu-785dcbfbbc-869bp
+22s         Normal    SuccessfulCreate    replicaset/low-cpu-785dcbfbbc   Created pod: low-cpu-785dcbfbbc-w5c6g
+22s         Normal    Scheduled           pod/low-cpu-785dcbfbbc-w5c6g    Successfully assigned de-scheduler/low-cpu-785dcbfbbc-w5c6g to data-engineering-control-plane
+22s         Warning   FailedScheduling    pod/low-cpu-785dcbfbbc-mvtdn    0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 Insufficient cpu.
+22s         Warning   FailedScheduling    pod/low-cpu-785dcbfbbc-nd2cx    0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 Insufficient cpu.
+22s         Normal    Scheduled           pod/low-cpu-785dcbfbbc-sxs7q    Successfully assigned de-scheduler/low-cpu-785dcbfbbc-sxs7q to data-engineering-control-plane
+22s         Normal    Scheduled           pod/low-cpu-785dcbfbbc-w242f    Successfully assigned de-scheduler/low-cpu-785dcbfbbc-w242f to data-engineering-control-plane
+22s         Normal    Scheduled           pod/low-cpu-785dcbfbbc-4wlvf    Successfully assigned de-scheduler/low-cpu-785dcbfbbc-4wlvf to data-engineering-control-plane
+21s         Normal    Created             pod/low-cpu-785dcbfbbc-sxs7q    Container created
+21s         Normal    Started             pod/low-cpu-785dcbfbbc-sxs7q    Container started
+21s         Normal    Pulled              pod/low-cpu-785dcbfbbc-sxs7q    Container image "busybox:1.36" already present on machine and can be accessed by the pod
+21s         Normal    Pulled              pod/low-cpu-785dcbfbbc-w242f    Container image "busybox:1.36" already present on machine and can be accessed by the pod
+21s         Normal    Created             pod/low-cpu-785dcbfbbc-w242f    Container created
+21s         Normal    Started             pod/low-cpu-785dcbfbbc-w242f    Container started
+21s         Normal    Started             pod/low-cpu-785dcbfbbc-ldqkl    Container started
+21s         Normal    Pulled              pod/low-cpu-785dcbfbbc-w5c6g    Container image "busybox:1.36" already present on machine and can be accessed by the pod
+21s         Normal    Created             pod/low-cpu-785dcbfbbc-w5c6g    Container created
+21s         Normal    Started             pod/low-cpu-785dcbfbbc-w5c6g    Container started
+21s         Normal    Created             pod/low-cpu-785dcbfbbc-ldqkl    Container created
+21s         Normal    Pulled              pod/low-cpu-785dcbfbbc-ldqkl    Container image "busybox:1.36" already present on machine and can be accessed by the pod
+21s         Normal    Started             pod/low-cpu-785dcbfbbc-869bp    Container started
+21s         Normal    Created             pod/low-cpu-785dcbfbbc-869bp    Container created
+21s         Normal    Pulled              pod/low-cpu-785dcbfbbc-869bp    Container image "busybox:1.36" already present on machine and can be accessed by the pod
+21s         Normal    Started             pod/low-cpu-785dcbfbbc-7lv6s    Container started
+21s         Normal    Created             pod/low-cpu-785dcbfbbc-7lv6s    Container created
+21s         Normal    Pulled              pod/low-cpu-785dcbfbbc-7lv6s    Container image "busybox:1.36" already present on machine and can be accessed by the pod
+21s         Normal    Started             pod/low-cpu-785dcbfbbc-4wlvf    Container started
+21s         Normal    Created             pod/low-cpu-785dcbfbbc-4wlvf    Container created
+21s         Normal    Pulled              pod/low-cpu-785dcbfbbc-4wlvf    Container image "busybox:1.36" already present on machine and can be accessed by the pod

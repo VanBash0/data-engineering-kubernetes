@@ -1,0 +1,9 @@
+Name:             one-job
+Namespace:        de-quota
+Resource          Used  Hard
+--------          ----  ----
+count/jobs.batch  1     1
+limits.cpu        500m  1
+limits.memory     64Mi  256Mi
+requests.cpu      100m  500m
+requests.memory   32Mi  128Mi
